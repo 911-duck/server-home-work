@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/body/style.css">
+    <link rel="stylesheet" href="./styles/menu/style.css">
+    <link rel="stylesheet" href="./styles/main/style.css">
+    <link rel="stylesheet" href="./styles/post/style.css">
+    <script src="https://kit.fontawesome.com/4f04e3c352.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="menu">
+        <div class="menu__header"><i class="fa-solid fa-shop"></i> belzzio</div>
+        <div class="menu__name">Explore</div>
+        <div class="menu__categories"><span><i class="fa-solid fa-layer-group"></i> Categories</span> <i class="fa-solid fa-angle-right"></i></div>
+        
+        <div class="menu__options">
+            <div class="menu__option"><i class="fa-solid fa-tags"></i> Best offers</div>
+            <div class="menu__option"><i class="fa-solid fa-store"></i> Sell with us</div>
+            <div class="menu__option"><i class="fa-solid fa-truck"></i> Track order</div>
+            <div class="menu__option"><i class="fa-solid fa-book-open"></i> Blog</div>
+        </div>
+
+        <div class="menu__personal-settings">
+            <div class="menu__account"><i class="fa-solid fa-user"></i> account</div>
+            <div class="menu__settings"><i class="fa-solid fa-gear"></i> settings</div>
+        </div>
+    </section>
+    <section class="main">
+        <div class="main__search-block">
+            <div class="main__search search">
+                <div class="search__categories">All Categories <i class="fa-solid fa-chevron-down"></i></div>
+                <input placeholder="Search" class="search__input"></input>
+                <div class="search__button"><i class="fa-solid fa-magnifying-glass"></i></div>
+            </div>
+            <div class="main__add"><i class="fa-solid fa-circle-plus"></i></div>
+            <div class="main__edit"><i class="fa-solid fa-pen-to-square"></i></div>
+            <div class="main__delete"><i class="fa-solid fa-circle-minus"></i></div>           
+            <div class="main__account"><i class="fa-solid fa-user-pen"></i></div>           
+        </div>
+        <div class="menu__items items">
+            <div class="items__header-block">
+                <div class="items__header">Top <strong>Products</strong></div>
+                <div class="items__view">view all</div>
+                <div class="items__turn">
+                    <div class="item__left-turn"><i class="fa-solid fa-angle-left"></i></div>
+                    <div class="item__right-turn"><i class="fa-solid fa-angle-right"></i></div>
+                </div>
+            </div>
+            <div class="items__block"></div>
+        </div>
+    </section>
+    <section class="post">
+        <div class="post__header">Add Product</div>
+        <input type="text" class="post__title">
+        <input type="text" class="post__picture">
+        <input type="text" class="post__quantity">
+        <input type="text" class="post__cost">
+        <button class="post__post">add</button>
+    </section>
+    <script src="script/main.js" type="module"></script>
+</body>
+</html>

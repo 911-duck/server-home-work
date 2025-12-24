@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.menu{
+    width: 18%;
+    height: 100%;
+    background-color: white;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 40px;
+    flex-direction: column;
+    position: relative;
+}
+
+.menu__header{
+    width: 90%;
+
+    font-size: 40px;
+    font-family: "Kaushan Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+    color: red;
+}
+
+.menu__name{
+    color: black;
+    width: 70%;
+    font-size: 30px;
+    font-family: "Zalando Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.menu__categories{
+        width: 90%;
+
+    height: 60px;
+    background: #ff0000;
+background: linear-gradient(271deg,rgba(255, 0, 0, 1) 0%, rgba(245, 22, 145, 1) 100%);
+
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 20px;
+
+font-family: "Zalando Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+color: white;
+font-size: 15px;
+
+}
+
+.menu__categories>span{
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+}
+
+.menu__options{
+    width: 70%;
+    height: 200px;
+    /* background-color: grey; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.menu__option{
+    width: 100%;
+    height: 40px;
+    color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: "Zalando Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+    gap: 10px;
+    transition: all 0.25s;
+}
+
+.menu__option:hover{
+    color: rgb(57, 57, 57);
+}
+
+.menu__personal-settings{
+    width: 70%;
+    height: 200px;
+    border-top: grey solid 2px;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 30px;
+    padding: 30px;
+    flex-direction: column;
+}
+
+.menu__account,
+.menu__settings{
+    width: 100%;
+    height: 40px;
+    color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: "Zalando Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+    gap: 10px;
+    transition: all 0.25s;
+}
+
+
+.menu__account:hover,
+.menu__settings:hover{
+    color: rgb(57, 57, 57);
+}

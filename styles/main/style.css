@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+.main{
+    width: 82%;
+    height: 100%;
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.main__search-block{
+    width: 100%;
+    height: 80px;
+    padding-right: 30px;
+    /* background-color: grey; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search{
+    width: 70%;
+    height: 80px;
+    background-color: rgb(224, 224, 224);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    position: relative;
+}
+
+.search__categories{
+    width: 160px;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-family: "Zalando Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.search__input{
+    width: calc(100% - 160px - 40px);
+    height: 50px;
+    outline: none;
+    border: none;
+    background: none;
+    font-size: 18px;
+}
+
+.search__button{
+    width: 20px;
+    height: 20px;
+    right: 15px;
+    position: absolute;
+}
+
+.main__add,
+.main__edit,
+.main__delete{
+    font-size: 25px;
+    color: grey;
+    transition: all 0.25s;
+
+}
+
+.main__account{
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 28px;
+    color: grey;
+    border-left: grey solid 2px;
+    transition: all 0.25s;
+
+}
+
+.main__edit:hover,
+.main__add:hover,
+.main__delete:hover,
+.main__account:hover{
+    color: rgb(57, 57, 57);
+}
+
+.items{
+    width: 100%;
+    height: calc(100% - 120px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.items__header-block{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    position: relative;
+}
+
+.items__header{
+    font-family: "Zalando Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+    font-size: 30px;
+}
+
+.items__view{
+    font-family: "Zalando Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+    font-size: 15px;
+    color: grey;
+    margin-top: 8px;
+}
+
+.items__turn{
+    width: 80px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    right: 20px;
+    font-size: 25px;
+    position: absolute;
+}
+
+.items__block{
+    padding-top: 20px;
+    display:flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    height: calc(100% - 40px);
+    
+}
+
+.product{
+    width: 240px;
+    height: 350px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 20px;
+    gap: 10px;
+    flex-direction: column;
+    border: rgb(230, 230, 230) solid 2px;
+    font-family: "Zalando Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-size: 18px;
+  position: relative;
+  transition: all 0.25s;
+}
+
+.product:hover{
+    border: grey solid 2px;
+
+}
+
+.picture{
+     width: 200px;
+    height: 200px;
+    background-size: cover;
+}
+
+.cost{
+    position: absolute;
+   right: 20px;
+    bottom: 20px;
+}
+
+
+.red{background-color: red;}
+.blue{background-color: blue;}
+.green{background-color: green;}
+.black{background-color: black;}
+.white{background-color: rgb(210, 210, 210);}
+
+.colors{
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    width: 70px;
+    height: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.colors>div{
+    width: 12px;
+    height: 12px;
+}
