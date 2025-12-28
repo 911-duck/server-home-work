@@ -1,4 +1,7 @@
-export const postData = (url, data) => {
+import { checkEndOfOffer } from "../utils/checkEndOfOffer.js"
+
+export const postData = (url, data, offerB) => {
+    checkEndOfOffer(data,offerB)
 	return new Promise((resolve, reject) =>
 		fetch(url, {
 			method: 'POST',

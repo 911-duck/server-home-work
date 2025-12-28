@@ -11,7 +11,7 @@
   font-variation-settings: "wdth" 100;
 }
 
-.post{
+.delete{
     width: 400px;
     height: 400px;
     position: absolute;
@@ -27,12 +27,12 @@
     transition: all 0.5s;
 }
 
-.post-down{
+.delete-down{
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
 }
 
-.post>input{
+.delete>input{
     width: 60%;
     height: 7%;
     padding: 10px;
@@ -42,7 +42,7 @@
     border: none;
 }
 
-.post>button{
+.delete>button{
         width: 40%;
 
     height: 30px;

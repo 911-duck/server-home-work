@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./styles/menu/style.css">
     <link rel="stylesheet" href="./styles/main/style.css">
     <link rel="stylesheet" href="./styles/post/style.css">
+    <link rel="stylesheet" href="./styles/edit/style.css">
+    <link rel="stylesheet" href="./styles/delete/style.css">
     <script src="https://kit.fontawesome.com/4f04e3c352.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -17,7 +19,8 @@
         <div class="menu__categories"><span><i class="fa-solid fa-layer-group"></i> Categories</span> <i class="fa-solid fa-angle-right"></i></div>
         
         <div class="menu__options">
-            <div class="menu__option"><i class="fa-solid fa-tags"></i> Best offers</div>
+            <div class="menu__option menu__offers"><i class="fa-solid fa-tags"></i> Best offers</div>
+            <span class="menu__offer-block"></span>
             <div class="menu__option"><i class="fa-solid fa-store"></i> Sell with us</div>
             <div class="menu__option"><i class="fa-solid fa-truck"></i> Track order</div>
             <div class="menu__option"><i class="fa-solid fa-book-open"></i> Blog</div>
@@ -54,12 +57,27 @@
     </section>
     <section class="post">
         <div class="post__header">Add Product</div>
-        <input type="text" class="post__title">
-        <input type="text" class="post__picture">
-        <input type="text" class="post__quantity">
-        <input type="text" class="post__cost">
+        <input type="text" placeholder="title" class="post__title">
+        <input type="text" placeholder="picture" class="post__picture">
+        <input type="text" placeholder="quantity" class="post__quantity">
+        <input type="text" placeholder="cost" class="post__cost">
         <button class="post__post">add</button>
     </section>
-    <script src="script/main.js" type="module"></script>
+    <section class="delete">
+        <div class="delete__header">delete Product</div>
+        <input type="text" placeholder="id" class="delete__id">
+        <button class="delete__delete">add</button>
+    </section>
+    <section class="edit">
+        <div class="edit__header">edit Product</div>
+        <input type="text" placeholder="id" class="edit__id">
+        <input type="text" placeholder="title" class="edit__title">
+        <input type="text" placeholder="picture" class="edit__picture">
+        <input type="text" placeholder="quantity" class="edit__quantity">
+        <input type="text" placeholder="cost" class="edit__cost">
+        <button class="edit__edit">edit</button>
+    </section>
+    <script src="./script/main.js" type="module"></script>
+    <script src="./script/utils/checkEndOfOffer.js" type="module"></script>
 </body>
 </html>
